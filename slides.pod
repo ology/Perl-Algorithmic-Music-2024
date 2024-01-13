@@ -397,7 +397,7 @@ sub chords {
 =head1 Links
 
 This Slideshow is
-L<on GitHub|https://github.com/ology/Perl-Algorithmic-Music>
+L<on GitHub|https://github.com/ology/Perl-Algorithmic-Music-2024>
 (and L<made with S5|https://metacpan.org/dist/Pod-S5>)
 
 L<Perl Algorithmic Composition Tutorial|https://github.com/ology/MIDI-Perl-HOWTO/wiki>
