@@ -404,13 +404,4 @@ L<Perl Algorithmic Composition Tutorial|https://github.com/ology/MIDI-Perl-HOWTO
 
 The L<#perl-music|irc://irc.perl.org:6667/#perl-music> channel on irc.perl.org
 
-The L<Groove-Tool|https://github.com/ology/Groove-Tool>,
-L<Rock-Tool|https://github.com/ology/Rock-Tool> and
-L<Jazz-Tool|https://github.com/ology/Jazz-Tool> on GitHub
-
-Shameless plug: My L<latest album "XI"|https://ology.net/XI/> - youtube, spotify, apple music, etc.
-and includes the partially algorithmic tune
-"L<Permutational|https://www.youtube.com/watch?v=dhXMhaMcgag>"
-- Check it out!
-
 =cut
