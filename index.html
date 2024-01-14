@@ -4,12 +4,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<title>https://ology.github.io/Perl-Algorithmic-Music/</title>
+<title>https://ology.github.io/Perl-Algorithmic-Music-2024/</title>
 <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
 <meta name="generator" content="pod2s5 0.09" />
 <meta name="generator" content="S5" />
 <meta name="version" content="S5 1.1" />
-<meta name="presdate" content="Wed Jul 12 2023" />
+<meta name="presdate" content="Jul 12 2024" />
 <meta name="author" content="Gene Boggs" />
 <meta name="company" content="Gene Boggs" />
 <!-- configuration parameters -->
@@ -47,10 +47,10 @@ img#me05 {top: 43px;left: 36px;}
 <div id="currentSlide"></div>
 <div id="header"></div>
 <div id="footer">
-<h1>Toronto, ON &#8226; Wed Jul 12 2023</h1>
-<h2>https://ology.github.io/Perl-Algorithmic-Music/</h2></div>
+<h1>Las Vegas, NV &#8226; Jul 12 2024</h1>
+<h2>https://ology.github.io/Perl-Algorithmic-Music-2024/</h2></div>
 </div><div class="slide">
-<h1>Algorithmic Music with Perl
+<h1>Beginning Algorithmic Music with Perl
 
 </h1><p><img src="https://ology.net/images/perl-gene.jpg" />
  <a href="https://github.com/ology">Gene Boggs</a>
@@ -59,13 +59,9 @@ img#me05 {top: 43px;left: 36px;}
 <br>
 <span style="font-size: medium;"><a href="http://en.wikipedia.org/wiki/Brian+Eno">Brian Eno</a> - excerpt from "Music For Airports"</span>
 
-<p><a href="https://tprc.to/tprc-2023-tor/">TPRC 2023</a> &#x2022; Toronto, ON
+<p><a href="https://tprc.to/tprc-2024-tor/">TPRC 2023</a> &#x2022; Las Vegas
 
-</p><div class="notes">Let's talk about music!
-
-The first part will cover concepts, which I will try to whip-though, so we can get to the algorithms.
-
-If you want to follow along or reread what just happened, these slides are live at the link on the bottom of the pages. </div></div>
+</p><div class="notes">If you want to follow along or reread what just happened, these slides are live at the link on the bottom of the pages. </div></div>
 <div class="slide">
 <h1>What this *is* about
 
@@ -96,7 +92,7 @@ If you want to follow along or reread what just happened, these slides are live 
 </h1><p><img src="https://placekitten.com/500/500" />
 
 
-</p><div class="notes">This used to have a bunch of descriptions, types, and techniques. But it took way too long! See the OLD/ directory, in the github repo. </div></div>
+</p><div class="notes">... </div></div>
 <div class="slide">
 <h1>Why Make Algorithmic Music?
 
@@ -272,62 +268,14 @@ $score->write_score("$0.mid"); </pre><div class="notes">... </div></div>
 
 <div class="notes">... </div></div>
 <div class="slide">
-<h1>Groove-Tool
-
-</h1><ul class="incremental"><li level="1"><p>Generate combinatorial rhythmic patterns
-
-</p></li><li level="1"><p>Produce a randomized, figured bass line
-
-</p></li><li level="1"><p>morbo groovetool.pl  # <a href="http://127.0.0.1:3000">http://127.0.0.1:3000</a>
-
-</p></li></ul class="incremental"><div class="notes">... </div></div>
-<div class="slide">
-<h1>Figured Bass Part 1 of 2
-
-</h1><p>&#x2022; <b>Phrase generator for rhythmic motifs</b>
-
-</p><pre>my $phrase = Music::Duration::Partition->new(
-  size    => 3,                   # Number of beats to render
-  pool    => [qw(hn dqn qn en)],
-  weights => [   1, 1,  2, 2  ],  # Optional
-  groups  => [   1, 1,  1, 2  ],  # Optional
-);
-
-my @motifs = $phrase->motifs(2); </pre><div class="notes">... </div></div>
-<div class="slide">
-<h1>Figured Bass Part 2 of 2
-
-</h1><pre>my @pitches = get_scale_MIDI($note, $octave, $scale);
-
-my $voice = Music::VoiceGen->new(
-  pitches   => \@pitches,
-  intervals => [qw/-4 -3 -2 2 3 4/],  # Allowed interval jumps
-);
-
-# main phrase voices
-my @voices1 = map { $voice->rand } $motifs[0]->@*;
-
-# ... more code ...
-
-my @voices2 = map { $voice->rand } $motifs[1]->@*; </pre><div class="notes">Music::VoiceGen module by Jeremy Mates (AKA thrig) - I know you're out there! </div></div>
-<div class="slide">
 <h1>Links
 
 </h1><p>This Slideshow is
-<a href="https://github.com/ology/Perl-Algorithmic-Music">on GitHub</a>
+<a href="https://github.com/ology/Perl-Algorithmic-Music-2024">on GitHub</a>
 (and <a href="https://metacpan.org/dist/Pod-S5">made with S5</a>)
 
 </p><p><a href="https://github.com/ology/MIDI-Perl-HOWTO/wiki">Perl Algorithmic Composition Tutorial</a>
 
 </p><p>The <a href="irc://irc.perl.org:6667/#perl-music">#perl-music</a> channel on irc.perl.org
-
-</p><p>The <a href="https://github.com/ology/Groove-Tool">Groove-Tool</a>,
-<a href="https://github.com/ology/Rock-Tool">Rock-Tool</a> and
-<a href="https://github.com/ology/Jazz-Tool">Jazz-Tool</a> on GitHub
-
-</p><p>Shameless plug: My <a href="https://ology.net/XI/">latest album "XI"</a> - youtube, spotify, apple music, etc.
-and includes the partially algorithmic tune
-"<a href="https://www.youtube.com/watch?v=dhXMhaMcgag">Permutational</a>"
-- Check it out!
 
 </p></div></body></html>
