@@ -21,7 +21,7 @@ Or:
 
 > perl code/parse-notes.pl slides.pod > notes.html
 
-> pod2s5 slides.pod --name "https://ology.github.io/Perl-Algorithmic-Music/" --creation "Wed Jul 12 2023" --where "Toronto, ON" --company "Gene Boggs" --author "Gene Boggs" --dest '.' > /dev/null 2>&1
+> pod2s5 slides.pod --name "https://ology.github.io/Perl-Algorithmic-Music-2024/" --creation "Jul 12 2024" --where "Las Vegas, NV" --company "Gene Boggs" --author "Gene Boggs" --dest '.' > /dev/null 2>&1
 
 > rm -f code/1-otj.pl.mid ; perl code/1-otj.pl
 > rm -f audio/1-otj.mp3 ; timidity -c timidity.cfg -A10a code/1-otj.pl.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k audio/1-otj.mp3
