@@ -76,7 +76,7 @@ Kittens!
 
 =head1 Sorry!
 
-G<kittens-1.jpg>
+G<kittens-1.png>
 
 =begin note
 
