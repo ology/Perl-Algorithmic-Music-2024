@@ -1,7 +1,5 @@
 =head1 Beginning Algorithmic Music with Perl
 
-G<https://ology.net/images/perl-gene.jpg> L<Gene Boggs|https://github.com/ology>
-
 G<github-qr.jpg>
 
 =begin note
