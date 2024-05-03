@@ -1,6 +1,6 @@
 =head1 Beginning Algorithmic Music with Perl
 
-G<github-qr.jpg>
+G<qr-beginning.png>
 
 =begin note
 
