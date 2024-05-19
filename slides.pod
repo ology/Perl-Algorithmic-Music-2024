@@ -92,7 +92,7 @@ To satisfy curiosities - "What do juxtapositions of beat patterns sound like?"
 
 =item *
 
-For practice and study, with etudes and rhythms
+For practice and study, with etudes and "not-a-metronome" rhythms
 
 =back
 
@@ -207,6 +207,7 @@ sub treble {
 =end html
 
 =begin pre
+
 
 > timidity -c timidity.cfg -A10a code/2-random.pl.mid -Ow -o - \
   | ffmpeg -i - -acodec libmp3lame -ab 64k audio/2-random.mp3
