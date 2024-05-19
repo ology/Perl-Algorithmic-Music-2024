@@ -42,15 +42,15 @@ Song or audio I<analysis>
 
 =item *
 
-I<Real-time> audio or MIDI processing
+I<Real-time> audio or MIDI processing (next talk)
 
 =item *
 
-I<Low-level> MIDI events, like note_on, note_off, or sysex messages
+I<Low-level> MIDI events, like note_on, note_off, or sysex messages (next talk)
 
 =item *
 
-Artificial intelligence techniques, like using LLMs
+Artificial intelligence techniques, like generative AI
 
 =item *
 
